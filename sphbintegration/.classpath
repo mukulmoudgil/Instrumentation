@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_CORE"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_Persistence_CORE"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_AOP"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_Persistence_JDBC"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_EM"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_CORE"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/antlr.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/asm.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/axis.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/dom4j.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/hibernate-core.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/j2ee.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/javassist-3.14.0-GA.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/jta.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/junit.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/mysql-connector-java-5.1.8-bin.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/postgresql-9.0-802.jdbc4.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/saaj.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/slf4j-log4j12.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-aop-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-aop-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-aop-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-aspects-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-aspects-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-aspects-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-beans-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-beans-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-beans-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-context-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-context-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-context-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-context-support-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-context-support-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-context-support-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-core-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-core-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-core-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-expression-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-expression-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-expression-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-hibernate3-2.0-m4.jar" sourcepath="lib"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-instrument-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-instrument-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-instrument-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-instrument-tomcat-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-instrument-tomcat-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-instrument-tomcat-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-jdbc-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-jdbc-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-jdbc-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-jms-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-jms-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-jms-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-messaging-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-messaging-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-messaging-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-orm-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-orm-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-orm-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-oxm-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-oxm-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-oxm-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-test-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-test-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-test-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-tx-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-tx-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-tx-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-web-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-web-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-web-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-webmvc-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-webmvc-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-webmvc-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-webmvc-portlet-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-webmvc-portlet-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-webmvc-portlet-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-websocket-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-websocket-4.1.4.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/spring-websocket-4.1.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/webserviceutils.jar"/>
+	<classpathentry kind="lib" path="E:/sphbintegration/lib/wsdl4j.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
