@@ -12,11 +12,7 @@ import javassist.CtMethod;
 //this class will be registered with instrumentation agent
 
 public class DurationTransformer implements ClassFileTransformer {
-    private ClassPool pool;
 
-    /*
-     * public void ImportantLogClassTransformer() { pool = ClassPool.getDefault(); }
-     */
 
     @Override
     public byte[] transform(ClassLoader loader, String className, Class classBeingRedefined,
@@ -31,31 +27,30 @@ public class DurationTransformer implements ClassFileTransformer {
             System.out.println("Instrumenting...... class " + className);
             try {
                 ClassPool classPool = ClassPool.getDefault();
-                // System.out.println(classPool.getDefault().getMethod(classname, methodname));
                 CtClass ctClass = classPool.makeClass(new ByteArrayInputStream(classfileBuffer));
-                // CtClass point = classPool.getDefault().get("Point");
-                // CtField f = new CtField(CtClass.intType, "z", point);
-                // point.addField(f);
-
                 CtMethod[] methods = ctClass.getDeclaredMethods();
 
                 for (CtMethod method : methods) {
-                    System.out.println(method.getMethodInfo().getName());
-                    if (method.getReturnType().equals("Session")) {
+                    // System.out.println(method.getMethodInfo().getName());
+                    if (method.getName().equals("openSession")) {
                         // method.addLocalVariable("Logstatements", CtClass.charType);
                         // method.insertBefore("Logstatements = in method call");
                         // method.insertBefore("System.out.println(\"saveOrUpdate ");
                         // method.insertBefore("System.out.println(\"get current session called ");
-                        // method.insertBefore("System.out.println(\"Here I am!\")");
-                        System.out.println("hello i am in");
-                        method.addLocalVariable("startTime", CtClass.longType);
-                        method.insertBefore("startTime = System.nanoTime();");
-                        method.insertAfter("System.out.println(\"Execution Duration "
-                                + "(nano sec): \"+ (System.nanoTime() - startTime) );");
+                        method.insertBefore("System.out.println(\"Here I am!\")");
+                        System.out.println("hello i am in open session");
+
+                    }
+                    if (method.getName().equals("close")) {
+                        System.out.println("i am in close");
+                    }
+                    if (method.getName().equals("getStatistics")) {
+                        System.out.println("i am in getStatistics");
+                    }
+                    if (method.getName().equals("getCurrentSession")) {
+                        System.out.println("i am in getCurrentSession");
                     }
 
-                    // method.insertAfter("System.out.println(\"Execution Duration "
-                    // + "(nano sec): \"+ (System.nanoTime() - startTime) );");
                 }
                 byteCode = ctClass.toBytecode();
                 ctClass.detach();
