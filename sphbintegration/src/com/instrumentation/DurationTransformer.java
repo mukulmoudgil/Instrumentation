@@ -5,9 +5,12 @@ import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;
 import java.security.ProtectionDomain;
 
+import javassist.CannotCompileException;
 import javassist.ClassPool;
+import javassist.CtBehavior;
 import javassist.CtClass;
 import javassist.CtMethod;
+import javassist.NotFoundException;
 
 //this class will be registered with instrumentation agent
 
@@ -28,6 +31,16 @@ public class DurationTransformer implements ClassFileTransformer {
             try {
                 ClassPool classPool = ClassPool.getDefault();
                 CtClass ctClass = classPool.makeClass(new ByteArrayInputStream(classfileBuffer));
+                // new 
+                CtBehavior[] methods2 = ctClass.getDeclaredBehaviors();
+                for (int i = 0; i < methods2.length; i++) {
+                	System.out.println(methods2[i].isEmpty());
+                  if (methods2[i].isEmpty() == false) {
+                    changeMethod(methods2[i]);
+                  }
+                }
+                
+                // new ends
                 CtMethod[] methods = ctClass.getDeclaredMethods();
 
                 for (CtMethod method : methods) {
@@ -37,7 +50,7 @@ public class DurationTransformer implements ClassFileTransformer {
                         // method.insertBefore("Logstatements = in method call");
                         // method.insertBefore("System.out.println(\"saveOrUpdate ");
                         // method.insertBefore("System.out.println(\"get current session called ");
-                        method.insertBefore("System.out.println(\"Here I am!\")");
+                        //method.insertBefore("System.out.println(\"Here I am!\")");
                         System.out.println("hello i am in open session");
 
                     }
@@ -63,4 +76,11 @@ public class DurationTransformer implements ClassFileTransformer {
         }
         return byteCode;
     }
+    
+    private void changeMethod(CtBehavior method) throws NotFoundException, CannotCompileException {
+        if (method.getName().equals("openSession")) {
+          method.insertBefore("System.out.println(\"started method at \" + new java.util.Date());");
+          method.insertAfter("System.out.println(\"ended method at \" + new java.util.Date());");
+        }
+      }
 }
