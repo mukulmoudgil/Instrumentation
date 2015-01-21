@@ -15,10 +15,13 @@ public static void main(String[] args) {
 	EmployeeDao dao=(EmployeeDao)factory.getBean("d");
 	
 	Employee e=new Employee();
-        e.setId(20);
-        e.setName("Mukul");
-        e.setSalary(5000);
-	
+        e.setId(37);
+        e.setName("Admin");
+        e.setSalary(10000);
+        StackTraceElement[] currentThread = Thread.currentThread().getStackTrace();
+        for (StackTraceElement ct : currentThread) {
+            System.out.println(ct.getMethodName().toString());
+        }
 	//dao.saveEmployee(e);
         dao.saveEmployee(e);
 }

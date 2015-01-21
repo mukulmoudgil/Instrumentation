@@ -93,12 +93,12 @@ public class DurationTransformer implements ClassFileTransformer {
 
                     if (method.getName().equals("getSessionOpenCount")) {
                         System.out.println(method.getName().equals("getSessionOpenCount"));
-                        System.out.println("good bye !!");
-                        method.insertAfter("{ System.out.println(\"hello i am in getSessionOpenCountof StatisticsImpl+sessionOpenCount\"); }");
+                        System.out.println("good bye!!");
+                        method.insertAfter("{ System.out.println(\"hello i am in getSessionOpenCountof StatisticsImpl+(getSessionOpenCount())\"); }");
 
                     }
                     if (method.getName().equals("getSessionCloseCount")) {
-                        method.insertBefore("{ System.out.println(\"hello i am in getSessionOpenCount of StatisticsImpl+sessionCloseCount\"); }");
+                        method.insertBefore("{ System.out.println(\"hello i am in getSessionOpenCount of StatisticsImpl+(getSessionCloseCount())\"); }");
                     }
                 }
                 byteCode = ctClass.toBytecode();
